@@ -28,7 +28,7 @@ options.add_experimental_option('detach', True)
 chrome_driver = webdriver.Chrome()
 
 # Set up the Chrome service with the path to the driver executable
-service = ChromeService(executable_path="C:\\Users\\Jkoll\\OneDrive-Farmingdale\\test 123\\chromedriver_win32")
+service = ChromeService(executable_path="C:\\PATH\\TO\\CHROME\\DRIVER\\HERE")
 
 # Create a Chrome driver instance using the service and options
 driver = webdriver.Chrome(service=service, options=options)
