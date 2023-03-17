@@ -1,12 +1,48 @@
-Author: Jack Kollar
-This is my first python project!
-# Automated-Time-Sheet-Completer
-This code is designed to automate the process of filling out time slots for a particular week in a time attendance system.
+# Automated Time Sheet Completer
 
-It starts by importing the necessary libraries for Selenium web automation and setting up the Chrome driver with specified options. 
-It then prompts the user to input their email and password in a secure manner using msvcrt.
+This Python script automates the process of filling out employee time attendance using Selenium for web automation. It streamlines the process, reducing the time spent on manual data entry while improving the user experience.
 
-Afterwards, it navigates to a login page for a time attendance system and inputs the user's credentials using the send_keys() method from the ActionChains class.
-It also selects the user's school from a dropdown menu and submits it.
+## Features
 
-Once logged in, it navigates to the page where the user can input their time slots. It selects the first week from a dropdown menu and then uses a for loop to input the time slots for each day of that week.
+- Automatically enters time slots for multiple days of the week
+- Secure password entry and error handling
+- Significant time savings by automating repetitive tasks
+
+## Prerequisites
+
+- Python 3.x
+- Selenium
+- Chrome WebDriver
+
+## Installation
+
+1. Install Python 3.x from the [official website](https://www.python.org/downloads/).
+2. Install Selenium using pip:
+
+```bash
+pip install selenium
+```
+
+3. Download the [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) that matches your Chrome version and place it in a known location.
+
+## Usage
+
+1. Update the `executable_path` variable in the script with the path to your Chrome WebDriver:
+
+```python
+service = ChromeService(executable_path="C:\\PATH\\TO\\CHROME\\DRIVER\\HERE")
+```
+
+2. Run the script:
+
+```bash
+python automated_time_sheet_completer.py
+```
+
+3. Enter your email and password when prompted.
+
+4. The script will automatically navigate to the time attendance page, enter time slots for each day of the week, and submit the form.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
